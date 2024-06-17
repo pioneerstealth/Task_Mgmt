@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assign Task</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Assign Task</h2>
+        <form id="assignTaskForm" action="assign_task_step2.html">
+            <div class="form-group">
+                <label for="batch">Select Batch</label>
+                <select class="form-control" id="batch" required>
+                    <option value="">Select a batch</option>
+                    <option value="batch1">Batch 1</option>
+                    <option value="batch2">Batch 2</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="timeLimitHours">Time Limit (Hours)</label>
+                <input type="number" class="form-control" id="timeLimitHours" required>
+            </div>
+            <div class="form-group">
+                <label for="timeLimitMinutes">Time Limit (Minutes)</label>
+                <input type="number" class="form-control" id="timeLimitMinutes" required>
+            </div>
+            <div class="form-group">
+                <label for="maxMark">Max Marks</label>
+                <input type="number" class="form-control" id="maxMark" required>
+            </div>
+            <div class="form-group">
+                <label for="minMark">Min Marks</label>
+                <input type="number" class="form-control" id="minMark" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Next</button>
+            <a href="index.html" class="btn btn-secondary">Cancel</a>
+        </form>
+    </div>
+</body>
+</html>
